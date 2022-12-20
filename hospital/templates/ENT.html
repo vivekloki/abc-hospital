@@ -1,0 +1,34 @@
+{% extends 'base.html'%}
+{%block content%}
+{% load static %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <h1>ENT</h1>
+      <P>The Department of ENT at MAJ Hospital has started in 1982 and has a range of ingenious treatments which cater
+        to the patients suffering with diseases related to the ear, nose and throat. We aim at providing the best
+        service possible. We have state-of-the-art operation theatre and super specialized doctors in head & neck
+        surgery. At MAJ we:</P>
+
+      <ul>
+        <li>Diagnostic nasal endoscopy</li>
+        <li>Laryngoscopy</li>
+        <li>All minor procedures</li>
+        <li>24 hours emergency services</li>
+        <li>Management of nasal bleeding</li>
+        <li>Management of foreign bodies of ear</li>
+        <li>Tracheotomy</li>
+        <li>Management of facial injuries</li>
+      </ul>
+      <a href="{% url 'bk' %}" class="quick">Book</a>
+    </div>
+
+    <div class="col-sm-4">
+      <img src="{% static '/images/ent-department.jpg' %}" class="img">
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

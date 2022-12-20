@@ -1,0 +1,44 @@
+{% extends 'base.html'%}
+{%block content%}
+{% load static %}
+
+
+<div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <h1>Cardiology</h1>
+
+        <p>The Department of Cardiology aims at superior patient care and clinical outcomes. The team of
+          cardiologists,
+          physicians and other specialists are collectively dedicated to provide top-class cardiac services for
+          patients
+          suffering from congenital heart disease and other cardiac diseases.With the latest technology, skilled
+          physicians,
+          compassionate staff, and well-equipped wards, MAJ Hospital provide treatment services for heart conditions
+          such as
+          myocardial infarction, irregular heartbeat, coronary artery disease, heart failure, and abnormal cardiac
+          rhythm.We
+          have state-of-the-art technology for prompt diagnosis of our patients who present with signs and symptoms
+          related
+          to heart diseases. The diagnosis is performed using various tests including stress test, imaging, and
+          angiography.
+          The type of treatment depends on the patient’s condition. MAJ Heart Care Centre offs</p>
+        <ul>
+          <li>Angiogram</li>
+          <li>Angioplasty</li>
+          <li>Pacemaker insertion</li>
+          <li>TMT</li>
+          <li>Echo</li>
+        </ul>
+        <a href="{% url 'bk' %}" class="quick">Book</a>
+      </div>
+      <div class="col-sm-4">
+        <img src="{% static '/images/cardiology.jpg' %}" class="img">
+      </div>
+    </div>
+  </div>
+</div>  
+
+
+{% endblock %}

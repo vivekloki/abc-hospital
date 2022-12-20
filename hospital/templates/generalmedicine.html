@@ -1,0 +1,60 @@
+{% extends 'base.html'%}
+{%block content%}
+{% load static %}
+
+  
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <h1>General Medicine</h1>
+      <p>The practice of managing, preventing, treating and diagnosing all adult health conditions is termed as
+        General Medicine. As the first point of contact, often general medicine department facilitates to direct
+        patients to specialists if a medical condition needs advanced treatment or wherever required. Employing
+        advanced diagnostic methods the severity and/or cause of a condition is ascertained before an individual can
+        be referred to a specialist, if required. General medicine is the very basic requirement of any healthcare
+        organization and its practitioners promote general disease prevention methods and champion a healthy society.
+        The Department of General Medicine is one of the premier department of MAJ Hospital, bringing together an
+        elite cadre of medical professionals. The first priority is to provide patients with the highest level of
+        primary care possible with the state of the art facilities and diagnostic tools.
+
+        The department is supported by the latest diagnostic facilities that include Microbiology, Serology, Pathology
+        and Diagnostic Radiology. With the support of all the specialty departments at MAJ Hospital, enables the
+        department to provide comprehensive care to a patient with multiple problems without fragmentation of care and
+        improving quality in lives.
+
+        The Department is one of the oldest department in Kerala which delivers compassionate general medicical care
+        to the needy within the reach.
+
+        Some of the services rendered at the Department are given as below:
+
+        Primary care, including routine check-ups</p>
+      <ul>
+        <li>Diabetes management</li>
+        <li>Mental health assessment</li>
+        <li>Education programs</li>
+        <li>Blood pressure and related conditions</li>
+        <li>Stomach pain, vomiting, diarrhea and jaundice</li>
+        <li>Respiratory diseases like asthma, allergies, lung infection, cough, sinusitis, tuberculosis, and pneumonia
+        </li>
+        <li>Evaluation and treatment of multi-system diseases</li>
+        <li>Critical care, ICU and ventilator care</li>
+        <li>Diagnosis, treatment and follow up of life style diseases</li>
+        <li>Diagnosis, treatment and prevention of infectious diseases</li>
+        <li>Speciality Clinics</li>
+
+
+        <li>Diabetic Clinic – On every wednesday</li>
+        <li>Athsma Clinic – First friday of every month</li>
+      </ul>
+      <a href="{% url 'bk' %}" class="quick">Book</a>
+    </div>
+    
+    <div class="col-sm-4">
+      <img src="{% static '/images/general-medicine.jpg' %}" class="img">
+    </div>
+  </div>
+</div>
+
+{% endblock %}

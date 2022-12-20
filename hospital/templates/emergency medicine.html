@@ -1,0 +1,37 @@
+{% extends 'base.html'%}
+{%block content%}
+{% load static %}
+  
+
+
+<div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <h1>Emergency Medicine</h1>
+      <hr>
+      <p>In any emergency, time is very crucial. The care providers should know the value of time and should be
+        well-experienced to take quick and right decisions. Any delay in time, or a simple mistake can cost the
+        patients their life. Our emergency medicine and trauma care facilities are one of the most advanced in the
+        region. They contain specialty care sections for accident & trauma, cardiac emergencies, and paediatrics
+        emergencies. The department consists of professionals with specialized training and years of experience in
+        dealing with medical emergency situation.
+
+        Division units add another level of service for the patients. They are:</p>
+
+        <a href="{% url 'bk' %}" class="quick">Book</a>
+      <ul>
+        <li>Evaluation and treatment unit</li>
+        <li>Priority Areas</li>
+        <li>High Dependency Unit</li>
+      </ul>
+    </div>
+
+    <div class="col-sm-4">
+      <img src="{% static '/images/emergency-medicine.jpg' %}" class="img">
+    </div>
+  </div>
+</div>
+
+   
+{% endblock %}

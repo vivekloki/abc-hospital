@@ -1,0 +1,93 @@
+{% extends 'base.html'%}
+{%block content%}
+{% load static %}
+
+<div>
+  
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static '/images/INTER2.webp' %}" class="d-block" alt="..." id="img">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/interior1.jpg' %}" class="d-block" alt="..." id="img">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/interior4.jpg' %}" class="d-block" alt="..." id="img">
+      </div>
+    </div>
+  </div>
+
+  <div id="fixed"><a href="{% url 'dpt' %}" type="button" class="btn btn-warning" id="fix">Make an Appointment</a>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 mt-5">
+
+        <div class="card" style="width: 18rem; height:510px;">
+          <div class="card-body">
+            <h5 class="card-title">Why ABC</h5>
+
+            <p class="card-text">
+              An International Leader in Treating Complex Colorectal Conditions.
+
+              The ABC Super Specialty Hospital at Ernakulam is the first and most comprehensive proctology center in
+              the world.
+              Our surgeons and nurses at ABC is to provide truly multidisciplinary care for patients. All other
+              services and
+              supports our families need are available here under one roof.This center is an international leader in
+              Cardiological
+              research and education related to complex proctological conditions.and revolutionized the treatment of
+              proctological
+              patients in 2002 and introduced a procedure of Laser treatment center for Cancer & associated diseases.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-5">
+        <div class="card" style="width: 18rem; height:510px;">
+          <div class="card-body">
+            <h5 class="card-title">Emergency Services</h5>
+
+            <p class="card-text">
+
+              In any emergency, time is very crucial. The care providers should know the value of time and should be
+              well-experienced
+              to take quick and right decisions. Any delay in time, or a simple mistake can cost the patients their
+              life. Our emergency
+              medicine and trauma care facilities are one of the most advanced in the region. They contain speciality
+              care sections for
+              accident & trauma, cardiac emergencies, and paediatrics emergencies. The department consists of
+              professionals with specialized
+              training and years of experience in dealing with m</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-5">
+        <div class="card" style="width: 18rem; height:510px;">
+          <div class="card-body">
+            <h5 class="card-title">You will be well taken care of</h5>
+
+            <p class="card-text">
+
+              Meeting your health care needs is our priority. At ABC Hospitals, you and your family get the highest
+              quality medical care in a safe and
+              warm-hearted environment. We bring the expertise of experienced doctors and staff and the most advanced
+              technology to provide you with utmost
+              care and speedy recovery. We are committed to improving health care and treatment through research and
+              educating future health care professionals.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

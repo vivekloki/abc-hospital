@@ -1,0 +1,26 @@
+$(document).ready(function(){
+    $("#signin").validate({
+        rules:{
+            fname:{
+                required:true,
+                minlength:4,
+            },
+            mro:{
+                required:true,
+                minlength:5,
+            },
+            psd:{
+                required:true,
+                minlength:8,
+            },
+            cpsd:{
+                equalTo:"#pass",
+            },
+        },
+        messages:{
+           fname:{
+            required:"at least 4 char",
+           } 
+        }
+    })
+})

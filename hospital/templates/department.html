@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+{%block content%}
+{% load static %}
+
+<h1 class="text-center"> Our departments</h1>
+<hr>
+<div class="dpt">
+<div class="mx-auto w-50 bg-success text-center text-white p-3 my-3">
+<a href="{% url 'crd' %}" class="quick">Cardiology </a><br>
+<a href="{% url 'bk' %}" class="b">Book</a><br>
+</div>
+
+<div class="mx-auto w-50 bg-success text-center text-white p-3 my-3">
+<a href="{% url 'dts' %}" class="quick">Dental </a><br>
+<a href="{% url 'bk' %}" class="b">Book</a><br>
+</div>
+
+<div class="mx-auto w-50 bg-success text-center text-white p-3 my-3">
+<a href="{% url 'ent' %}" class="quick">Ent </a><br>
+<a href="{% url 'bk' %}" class="b">Book</a><br>
+</div>
+
+<div class="mx-auto w-50 bg-success text-center text-white p-3 my-3">
+<a href="{% url 'gm' %}" class="quick">General </a><br>
+<a href="{% url 'bk' %}" class="b">Book</a><br>
+</div>
+</div>
+
+
+{% endblock %}
+
+

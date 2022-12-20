@@ -1,0 +1,40 @@
+{% extends 'base.html'%}
+{%block content%}
+{% load static %}
+
+
+<center>
+    {% if q %}
+    <h4>You Searched for {{q}}</h4>
+    <br />
+    {% for Doctor in doct %}
+    <div class="container text-center bg-light"></div>
+    <div class="card text-center mx-3 my-3" style="width: 18rem; display:inline-block;">
+        <img src="{{Doctor.doc_img.url}}" alt="image" class="card-img-top">
+        <div class="card body">
+            <h5 class="card-title">DR.{{Doctor.doc_name}}</h5>
+            <p class="card-text">{{Doctor.doc_spec}}</p>
+            <h6>{{Doctor.dpt_name}}Department</h6>
+            <a href="{% url 'bk' %}" class="quick">Book</a><br>
+        </div>
+        {% endfor %}
+    </div>
+    </div>
+
+
+    {% for Department in dpr %}
+    <div class="mx-auto w-50 bg-success text-center text-white p-3 my-3">
+        <h1>{{ Department.dpt_name}}</h1><br />
+        <p>{{ Department.dpt_description}}</p>
+        <a class="nav-link" href="{% url 'dpt' %}">Department</a>
+    </div>
+    {% endfor %}
+
+    {% else %}
+    <h1>Hey! You forgot to search for . . .</h1>
+    {% endif %}
+
+
+</center>
+
+{% endblock %}

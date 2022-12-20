@@ -1,0 +1,54 @@
+{% extends 'base.html'%}
+{%block content%}  
+{% load static %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <h1>Dental Surgery</h1>
+      <hr>
+      <p> A healthy set of pearly whites make your smile look good! The Department of Dental Surgery is well known for
+        their dental services. The doctors from the field of dentistry are well experienced in their area of work and
+        provide the best of treatments for you. An expert team of dentists also cater to dental implants, facial
+        fractures and trauma related cases. The Department also specializes in general dental care, root canal therapy
+        and treatment for gums and supporting tissues</p>
+
+      <p>General Practices:</p>
+      <ul>
+        <li>Dental Radiography</li>
+        <li>Scaling</li>
+        <li>Teeth restorations, root Canal Treatment</li>
+        <li>Placement of removable and fixed dentures</li>
+        <li>Placement of oral implants</li>
+
+        <p>Oral & maxillofacial Surgery:</p>
+
+        <li>Simple and difficult tooth extraction</li>
+        <li>Incision & drainage of abscesses</li>
+        <li>Treatment of fractures of face and jaws</li>
+        <li>Treatment of cysts and tumours oral cavity and jaws</li>
+        <li>Incisional and excision biopsies</li>
+        <li>Treatment of disorders related to the temporomandibular joints</li>
+        <li>Treatment of various diseases of the oral cavity to usage of tobacco</li>
+      </ul>
+
+      <p>Orthodontics:</p>
+
+      <p>It deals with both children and adults patients having jaw deformities, maligned teeth, impacted teeth,
+        patients with smile correction. Procedures which can be performed are-</p>
+      <ul>
+        <li>Fixed orthodontics which can be either using metal brackets or ceramic brackets.</li>
+        <li>Invisible orthodontics using lingual braces or clear aligners</li>
+        <li>Myofunctional orthopaedics in children to correct different malocclusion and jaw deformities.</li>
+        <li>Orthognathic surgeries</li>
+      </ul>
+      <a href="{% url 'bk' %}" class="quick">Book</a>
+    </div>
+    <div class="col-sm-4">
+      <img src="{% static '/images/dental.jpg' %}" class="img">
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

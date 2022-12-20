@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title%}Doctors{% endblock %}
+{% block content%}
+{% load static %}
+
+<h1 class="text-center">DOCTORS PAGE</h1>
+<hr>
+
+<div class="container text-center bg-light">
+    {% for i in doc %}
+    <div class="card text-center mx-3 my-3" style="width: 18rem; display:inline-block;">
+        <img src="{{i.doc_img.url}}" alt="image" class="card-img-top">
+        <div class="card body">
+            <h5 class="card-title">DR.{{i.doc_name}}</h5>
+            <p class="card-text">{{i.doc_spec}}</p>
+            <h6>{{i.dpt_name}}Department</h6>
+            <a href="{% url 'bk' %}" class="quick">Book</a><br>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock%}
